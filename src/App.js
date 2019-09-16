@@ -15,6 +15,7 @@ export default class App extends Component {
   };
 
   async componentDidMount() {
+    document.title = "Feliz Aniversário Laiana <3";
     const response = await api.get("/files");
 
     this.setState({
